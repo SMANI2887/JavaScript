@@ -1,35 +1,32 @@
 // https://github.com/SMANI2887/JavaScript.git
 
-/* 6. Nested if…else
-Nested if…else statements in JavaScript allow us to create complex conditional logic by checking multiple conditions in a hierarchical manner. Each if statement can have an associated else block, and within each if or else block, you can nest another if…else statement. This nesting can continue to multiple levels, but it’s important to maintain readability and avoid excessive complexity.
+// https://www.geeksforgeeks.org/control-statements-in-javascript/?ref=next_article#approach-5-using-for-loop
 
-Syntax: */
-if (condition1) {
-    // Code block 1
-    if (condition2) {
-        // Code block 2
-    } else {
-        // Code block 3
-    }
-} else {
-    // Code block 4
+/* 1. JavaScript for Loop
+The JS for loop provides a concise way of writing the loop structure. The for loop contains initialization, condition, and increment/decrement in one line thereby providing a shorter, easy-to-debug structure of looping. 
+
+Syntax */
+for ('initialization; testing condition; increment/decrement') {
+    // statement(s)
 }
 
-/* Example: This example demonstrates how nested if…else statements can be used to handle different scenarios based on multiple conditions. */
+/*
+Initialization condition: It initializes the variable and mark the start of a for loop. An already declared variable can be used or a variable can be declared, local to loop only.
+Test Condition: It is used for testing the exit condition of a for loop. It must return a boolean value. It is also an Entry Control Loop as the condition is checked prior to the execution of the loop statements.
+Statement execution: Once the condition is evaluated to be true, the statements in the loop body are executed.
+Increment/ Decrement: It is used for updating the variable for the next iteration.
+Loop termination: When the condition becomes false, the loop terminates marking the end of its life cycle.
 
-let weather = "sunny";
-let temperature = 25;
+Example */
 
-if (weather === "sunny") {
-    if (temperature > 30) {
-        console.log("It's a hot day!");
-    } else if (temperature > 20) {
-        console.log("It's a warm day.");
-    } else {
-        console.log("It's a bit cool today.");
-    }
-} else if (weather === "rainy") {
-    console.log("Don't forget your umbrella!");
-} else {
-    console.log("Check the weather forecast!");
-};
+// JavaScript program to illustrate for loop
+let x;
+
+// for loop begins when x = 2
+// and runs till x <= 4
+for (x = 2; x <= 4; x++) {
+    console.log("Value of x: " + x);
+}
+
+
+
