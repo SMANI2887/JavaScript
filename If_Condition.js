@@ -1,24 +1,23 @@
 // https://github.com/SMANI2887/JavaScript.git
 
-/* 1. Using if Statement
- The if statement is used to evaluate a particular condition. If the condition holds true, the associated code block is executed.
+/* 2. Using if-else Statement
+The if-else statement will perform some action for a specific condition. Here we are using the else statement in which the else statement is written after the if statement and it has no condition in their code block.
 
- Syntax: */
+Syntax: */
 
-if ( condition ) {
-    // If the condition is met, 
-    //code  will get executed.
+if (condition1) {
+    // Executes when condition1 is true
+    if (condition2) {
+        // Executes when condition2 is true
+    }
 }
 
-// Example: In this example, we are using the if statement to find given number is even or odd.
+// Example: In this example, we are using if-else conditional statement to check the driving licence eligibility date.
 
-let num = 20;
+let age = 25;
 
-if (num % 2 === 0) {
-    console.log("Given number is even number.");
-}
-
-if (num % 2 !== 0) {
-    console.log("Given number is odd number.");
+if (age >= 18) {
+    console.log("You are eligible of driving licence")
+} else {
+    console.log("You are not eligible for driving licence")
 };
-
