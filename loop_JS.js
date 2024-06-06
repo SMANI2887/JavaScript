@@ -2,24 +2,26 @@
 
 // https://www.geeksforgeeks.org/control-statements-in-javascript/?ref=next_article#approach-5-using-for-loop
 
-/* 2. JavaScript while Loop
-The JS while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement. 
+/* 3. JavaScript do-while Loop
+The JS do-while loop is similar to the while loop with the only difference is that it checks for the condition after executing the statements, and therefore is an example of an Exit Control Loop. It executes loop content at least once event the condition is false.
 
-Syntax 
-
-while (boolean condition) {
-    loop statements...
+Syntax
+do {
+    Statements...
 }
+while (condition);
 
-1.While loop starts with checking the condition. If it is evaluated to be true, then the loop body statements are executed otherwise first statement following the loop is executed. For this reason, it is also called the Entry control loop
-2.Once the condition is evaluated to be true, the statements in the loop body are executed. Normally the statements contain an updated value for the variable being processed for the next iteration.
+1.The do-while loop starts with the execution of the statement(s). There is no checking of any condition for the first time.
+2.After the execution of the statements and update of the variable value, the condition is checked for a true or false value. If it is evaluated to be true, the next iteration of the loop starts.
 3.When the condition becomes false, the loop terminates which marks the end of its life cycle.
+4.It is important to note that the do-while loop will execute its statements at least once before any condition is checked and therefore is an example of the exit control loop.
 
+Example
 */
-// JavaScript code to use while loop
-let val = 1;
+let test = 1;
 
-while (val < 6) {
-    console.log(val); 
-    val += 1;
-}
+do {
+    console.log(test);
+    test++;
+} while(test <= 5)
+
