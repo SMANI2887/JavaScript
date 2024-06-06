@@ -1,28 +1,49 @@
 // https://github.com/SMANI2887/JavaScript.git
 
-/* 3. else if Statement
-The else if statement in JavaScript allows handling multiple possible conditions and outputs, evaluating more than two options based on whether the conditions are true or false.
+/* 4. Using Switch Statement (JavaScript Switch Case)
+As the number of conditions increases, you can use multiple else-if statements in JavaScript. but when we dealing with many conditions, the switch statement may be a more preferred option.
 
 Syntax: */
 
-if ('1st condition') {
-    // Code for 1st condition
-} else if ('2nd condition') {
-    // ode for 2nd condition
-} else if ('3rd condition') {
-    // Code for 3rd condition
-} else {
-    //  ode that will execute if all 
-    // above conditions are false
-}
-// Example: In this example, we are using the above-explained approach.
-
-const num = 0;
-
-if (num > 0) {
-    console.log("Given number is positive.");
-} else if (num < 0) {
-    console.log("Given number is negative.");
-} else {
-    console.log("Given number is zero.");
+switch (expression) {
+    case value1:
+        statement1;
+        break;
+    case value2:
+        statement2;
+        break;
+    // . . .
+    case valueN:
+        statementN;
+        break;
+    default:
+        statementDefault;
 };
+/* Example: In this example, we find a branch name Based on the student’s marks, this switch statement assigns a specific engineering branch to the variable Branch. The output displays the student’s branch name, */
+
+const marks = 85;
+
+let Branch;
+
+switch (true) {
+    case marks >= 90:
+        Branch = "Computer science engineering";
+        break;
+    case marks >= 80:
+        Branch = "Mechanical engineering";
+        break;
+    case marks >= 70:
+        Branch = "Chemical engineering";
+        break;
+    case marks >= 60:
+        Branch = "Electronics and communication";
+        break;
+    case marks >= 50:
+        Branch = "Civil engineering";
+        break;
+    default:
+        Branch = "Bio technology";
+        break;
+}
+
+console.log(`Student Branch name is : ${Branch}`);
