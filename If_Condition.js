@@ -1,18 +1,35 @@
 // https://github.com/SMANI2887/JavaScript.git
 
-/* 5. Using Ternary Operator ( ?: )
-The conditional operator, also referred to as the ternary operator (?:), is a shortcut for expressing conditional statements in JavaScript.
+/* 6. Nested if…else
+Nested if…else statements in JavaScript allow us to create complex conditional logic by checking multiple conditions in a hierarchical manner. Each if statement can have an associated else block, and within each if or else block, you can nest another if…else statement. This nesting can continue to multiple levels, but it’s important to maintain readability and avoid excessive complexity.
 
-Syntax: 
+Syntax: */
+if (condition1) {
+    // Code block 1
+    if (condition2) {
+        // Code block 2
+    } else {
+        // Code block 3
+    }
+} else {
+    // Code block 4
+}
 
-condition ? value if true : value if false */
+/* Example: This example demonstrates how nested if…else statements can be used to handle different scenarios based on multiple conditions. */
 
-// Example: In this example, we use the ternary operator to check if the user’s age is 18 or older. It prints eligibility for voting based on the condition.
+let weather = "sunny";
+let temperature = 25;
 
-let age = 21;
-
-const result =
-    (age >= 18) ? "You are eligible to vote."
-        : "You are not eligible to vote.";
-
-console.log(result);
+if (weather === "sunny") {
+    if (temperature > 30) {
+        console.log("It's a hot day!");
+    } else if (temperature > 20) {
+        console.log("It's a warm day.");
+    } else {
+        console.log("It's a bit cool today.");
+    }
+} else if (weather === "rainy") {
+    console.log("Don't forget your umbrella!");
+} else {
+    console.log("Check the weather forecast!");
+};
