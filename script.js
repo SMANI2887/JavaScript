@@ -4,7 +4,8 @@ class student {
     // constructor is a special method
     // that gets called whenever we create an object to this class
     constructor(){
-        console.log('constructor is called');
+        // console.log('constructor is called');
+        this.name = 'Guest';
     }
 
 }
