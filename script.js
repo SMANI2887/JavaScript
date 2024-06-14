@@ -16,6 +16,7 @@ let student3 = new student();
 
 // edit / update the student name
 student2.name = 'mani';
+student3.name = 'mathan';
 
 console.log(student2);
 console.log(student3);
