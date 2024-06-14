@@ -12,5 +12,10 @@ class student {
 
 // create an object
 let student2 = new student();
+let student3 = new student();
+
+// edit / update the student name
+student2.name = 'mani';
 
 console.log(student2);
+console.log(student3);
