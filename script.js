@@ -1,11 +1,10 @@
-let arr = [1,2,3,4,5];
+// class is a template or prototype or buleprint
+// defining a class
+class student {
 
-let arr2 = arr.slice(0,1);
-// slice(start[index], end[index])
-let arr3 = arr.slice(4,5);
+}
 
-let arr4 = arr.slice(0,-4);
+// create an object
+let student2 = new student();
 
-console.log(arr2);
-console.log(arr3);
-console.log(arr4);
+console.log(student2);
