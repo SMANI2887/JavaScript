@@ -13,7 +13,7 @@ class student {
 }
 
 // create an object
-let student2 = new student('mani', 35);
+let student2 = new student('mani', 35, 'B47we');
 let student3 = new student('mathan', 32);
 
 class teacher {
