@@ -1,20 +1,25 @@
-// By value (primitives)
-let a = 5;
-let b;
-b = a;
-a = 3;
-console.log(a);
-console.log(b);
+/*
+ Type of function 
+1.anonymous 
+2.IIFE
+3.arrow
+ */
+// 1. normal function
 
-// ------------------------------------------------------------------
+function add(a,b){
+
+    console.log(a+b);
+}
+add(13,12)
+
+// another away
+
+function add2(a,b){
+    let c = a+b;
+    return c
+}
+
+console.log(add2(13,12))
 
 
-// By reference (all objects (including functions))
-let c = { greeting: 'Welcome' };
-let d;
-d = c;
 
-// Mutating the value of c
-c.greeting = 'Welcome to geeksforgeeks';
-console.log(c);
-console.log(d);
