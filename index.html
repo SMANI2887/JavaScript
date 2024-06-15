@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // create a new xhr request
+        let app = new XMLHttpRequest();
+
+        // open to connect
+        app.open('GET','https://restcountries.com/v3.1/all',true);
+
+        // after a request is processed
+        app.onload = function (){
+            let responseObject = JSON.parse(this.responseText)
+            console.log(responseObject.map(e =>e.capital).join(' '));
+        }
+
+        // sending reques
+        app.send();
+
+        
+    </script>
+</body>
+</html>
