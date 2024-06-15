@@ -9,10 +9,10 @@ class Rectangle {
         this.height = height;
         
     }
-    
-    area() {
-
-    console.log(`Rectangle height is ${this.height} and width is ${this.width} area is ${this.width * this.height}`);
+    // function calling 
+    print() {
+        let result = `Rectangle is width = ${this.width}; height = ${this.height}`
+        return result;
 }
 
 }
@@ -24,8 +24,7 @@ let R2 = new Rectangle(200, 100);
 let R3 = new Rectangle(300, 150);
 
 
-console.log(R1);
+console.log(R1.print());
 console.log(R2);
 console.log(R3);
 
-R1.area()
