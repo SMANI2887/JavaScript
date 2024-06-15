@@ -11,10 +11,8 @@ class Rectangle {
     }
     // function calling 
     print() {
-        // template literals
-        let result = `Rectangle is width :  
-                      ${this.width}, 
-                      height =  ${this.height}`;
+        // single quotes method variable 
+        let result = 'Rectangle is width : '  +this.width +', height ='  +this.height;
         return result;
 }
 
