@@ -1,35 +1,31 @@
 // class is a template or prototype or buleprint
 // defining a class
-class student {
+class Rectangle {
     // constructor is a special method
     // that gets called whenever we create an object to this class
-    constructor(name, age, status = 'student'){
+    constructor(width, height){
         // console.log('constructor is called');
-        this.name = name;
-        this.age = age;
-        this.status = status;
+        this.width = width;
+        this.height = height;
+        
     }
+    
+    area() {
+
+    console.log(`Rectangle height is ${this.height} and width is ${this.width} area is ${this.width * this.height}`);
+}
 
 }
+
 
 // create an object
-let student2 = new student('mani', 35, 'B47we');
-let student3 = new student('mathan', 32);
-
-class teacher {
-    constructor(name, age){
-        this.name = name;
-        this.age = age;
-        this.status = 'Teacher';
-    }
-}
-
-let teacher2 = new teacher('ratha', 35);
-let teacher3 = new teacher('kala',42);
+let R1 = new Rectangle(100, 50);
+let R2 = new Rectangle(200, 100);
+let R3 = new Rectangle(300, 150);
 
 
-console.log(teacher2);
-console.log(teacher3);
+console.log(R1);
+console.log(R2);
+console.log(R3);
 
-console.log(student2);
-console.log(student3);
+R1.area()
